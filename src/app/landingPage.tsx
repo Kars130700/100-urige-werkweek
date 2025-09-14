@@ -109,7 +109,7 @@ export default function EpicMemeCharityLanding() {
             href="https://decorrespondent.nl/cp/debermudadriehoekvantalent" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="underline text-blue-600 hover:text-blue-800"
+            style={{ textDecoration: "underline", color: "var(--accent-cyan)" }}
           >
             De bermudadriehoek van talent
           </a> van Simon Teuten. 
@@ -181,17 +181,18 @@ export default function EpicMemeCharityLanding() {
                 januari 100 uur werken. Alle opbrengsten gaan naar een goed doel. Doe je mee?
               </p>
               <p className="text-lg md:text-md text-neutral-700 max-w-3xl editable">
-                Als ik niet word ingehuurd, besteed ik mijn tijd aan mijn eigen startup{" "}
+               Zo nee, geen paniek. Er is altijd genoeg te doen voor {" "}
                 <a
                   href="https://toetstester.nl/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline text-blue-600 hover:text-blue-800"
+                  style={{ textDecoration: "underline", color: "var(--accent-cyan)" }}
                 >
                   ToetsTester
                 </a>
-                . Daarnaast vind ik onderwijs ontzettend interessant, lees ik graag over filosofie
-                en geniet ik ervan om in mijn vrije tijd te gaan zeilen.
+                . Even schaamteloze promo: met ToetsTester verlagen wij de werkdruk van docenten door nakijken gedeeltelijk te automatiseren.
+                We schatten jaarlijks meer dan 5 miljoen uur te kunnen besparen.
+                BiemBamBoem, das nog eens impact maken!
               </p>
             </div>
 
@@ -363,6 +364,8 @@ export default function EpicMemeCharityLanding() {
           Doneer / Sponsor
         </button>
       </div>
+
+      {/* Audio toggle */} <div className="fixed top-4 right-4 z-50 flex items-center gap-2"> <Image src="/100.svg" alt="Sound Icon" width={24} height={24} /> <label className="text-xs uppercase tracking-widest text-neutral-500 text-bold"><AccentCoral>UUR</AccentCoral></label> </div>
     </div>
   );
 }

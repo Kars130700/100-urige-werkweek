@@ -7,8 +7,8 @@
 import EpicMemeCharityLanding from "./landingPage";
 
 export const metadata = {
-  title: "100 UUR – Epische Werkweek",
-  description: "Alle opbrengsten gaan naar het goede doel.",
+  title: "100 UUR voor het Goede Doel",
+  description: "In de derde week van januari ga ik 100 uur lang beunen voor het goede doel.",
 };
 
 export default function Page() {
