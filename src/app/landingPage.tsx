@@ -23,7 +23,7 @@ const CHARITY = {
 };
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "/100-urige-werkweek";
-const TARGET_DATE_DEFAULT = new Date(Date.now() + 1000 * 60 * 60 * 100); // ~100 uur vanaf nu
+const TARGET_DATE_DEFAULT = new Date("2025-01-19T00:00:00");
 const VIDEO_BG_SRC = `${prefix}/UUU.mp4`;
 const VIDEO_BG_POSTER = ""; // bijv. "/intro-poster.jpg" of laat leeg
 
