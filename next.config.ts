@@ -1,16 +1,10 @@
-import type { NextConfig } from "next";
+const isProd = process.env.NODE_ENV === "production";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  output: "export",
+  images: { unoptimized: true },
+  basePath: isProd ? "/100-urige-werkweek" : "",
+  assetPrefix: isProd ? "/100-urige-werkweek/" : "",
 };
 
 export default nextConfig;
-
-const isProd = process.env.NODE_ENV === 'production'
-
-module.exports = {
-  output: "export",          // enable static export
-  images: { unoptimized: true }, // disable next/image optimization
-  basePath: isProd ? "/100-urige-werkweek" : "",
-  assetPrefix: isProd ? "/100-urige-werkweek/" : "",
-}
