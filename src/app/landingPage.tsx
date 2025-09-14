@@ -23,7 +23,7 @@ const CHARITY = {
 };
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "/100-urige-werkweek";
-const TARGET_DATE_DEFAULT = new Date("2025-01-19T00:00:00");
+const TARGET_DATE_DEFAULT = new Date("2025-01-19T00:00:00+01:00");
 const VIDEO_BG_SRC = `${prefix}/UUU.mp4`;
 const VIDEO_BG_POSTER = ""; // bijv. "/intro-poster.jpg" of laat leeg
 
@@ -105,14 +105,14 @@ export default function EpicMemeCharityLanding() {
             <AccentCoral>Alles</AccentCoral> gaat naar het goede doel.
           </h2>
           <p className="text-lg md:text-md text-neutral-700 max-w-3xl editable">
-          Begin 2025 las ik het boek <a 
-            href="https://decorrespondent.nl/cp/debermudadriehoekvantalent" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style={{ textDecoration: "underline", color: "var(--accent-cyan)" }}
-          >
-            "De bermudadriehoek van talent"
-          </a> van Simon Teuten.
+          Begin 2025 las ik het boek  <a
+    href="https://decorrespondent.nl/cp/debermudadriehoekvantalent"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: "underline", color: "var(--accent-cyan)" }}
+  >
+    "De bermudadriehoek van talent"
+  </a>{" "}van Simon Teuten.
             Dit boek gaat over toppresteerders die &apos;vallen&apos; voor
             de grote kantoren en zo uiteindelijk niet aan hun eigen
             verwachtingen voldoen. In veel delen van het boek kon ik me
