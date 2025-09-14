@@ -105,8 +105,15 @@ export default function EpicMemeCharityLanding() {
             <AccentCoral>Alles</AccentCoral> gaat naar het goede doel.
           </h2>
           <p className="text-lg md:text-md text-neutral-700 max-w-3xl editable">
-            Begin 2025 las ik het boek &apos;De bermudadriehoek van talent&apos; van
-            Simon Teuten. Dit boek gaat over toppresteerders die &apos;vallen&apos; voor
+          Begin 2025 las ik het boek <a 
+            href="https://decorrespondent.nl/cp/debermudadriehoekvantalent" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="underline text-blue-600 hover:text-blue-800"
+          >
+            De bermudadriehoek van talent
+          </a> van Simon Teuten. 
+            Dit boek gaat over toppresteerders die &apos;vallen&apos; voor
             de grote kantoren en zo uiteindelijk niet aan hun eigen
             verwachtingen voldoen. In veel delen van het boek kon ik me
             vinden: ik zie mezelf als ambitieus, heb onwijs veel geluk met
@@ -116,7 +123,7 @@ export default function EpicMemeCharityLanding() {
           <p className="text-lg md:text-md text-neutral-700 max-w-3xl editable">
             Dat bracht me op het idee om het andere uiterste op te zoeken: hoe
             kan ik ambitieus zijn én tegelijker tijd zo veel mogelijk goed doen.
-            Het antwoord volgde vrij snel. De ✨Legendarische 100 uurige werkweek✨.
+            Het antwoord volgde vrij snel. De ✨Legendarische 100 urige werkweek✨.
             1 week, waarin ik zo veel mogelijk goed probeer te doen.
           </p>
           <p className="text-lg md:text-md text-neutral-700 max-w-3xl editable">
@@ -141,7 +148,7 @@ export default function EpicMemeCharityLanding() {
               },
               {
                 h: "Donaties = impact",
-                p: "Elke donatie gaat naar een bewezen impactvol doel",
+                p: "Elke donatie gaat naar een bewezen impactvol doel.",
               },
             ].map((card, i) => (
               <div
@@ -165,17 +172,28 @@ export default function EpicMemeCharityLanding() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Tekst */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-              Wie ben ik?
-            </h2>
-            <p className="text-lg md:text-md text-neutral-700 max-w-3xl editable">
-              Mijn naam is Kars. Ik heb een passie voor zo veel mogelijk goed
-              doen en ik zie mijzelf als ambitieus. Om mijn twee passies te
-              combineren, ga ik van 19 tot 25 januari 100 uur werken. Alle
-              opbrengsten gaan naar een goed doel. Doe je mee?
-            </p>
-            <p className="text-lg text-neutral-700"></p>
-          </div>
+              <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Wie ben ik?
+              </h2>
+              <p className="text-lg md:text-md text-neutral-700 max-w-3xl editable">
+                Mijn naam is Kars. Ik heb een passie voor zo veel mogelijk goed doen en ik zie
+                mijzelf als ambitieus. Om mijn twee passies te combineren, ga ik van 19 tot 25
+                januari 100 uur werken. Alle opbrengsten gaan naar een goed doel. Doe je mee?
+              </p>
+              <p className="text-lg md:text-md text-neutral-700 max-w-3xl editable">
+                Als ik niet word ingehuurd, besteed ik mijn tijd aan mijn eigen startup{" "}
+                <a
+                  href="https://toetstester.nl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-blue-600 hover:text-blue-800"
+                >
+                  ToetsTester
+                </a>
+                . Daarnaast vind ik onderwijs ontzettend interessant, lees ik graag over filosofie
+                en geniet ik ervan om in mijn vrije tijd te gaan zeilen.
+              </p>
+            </div>
 
           {/* Foto */}
           <div className="flex justify-center">
