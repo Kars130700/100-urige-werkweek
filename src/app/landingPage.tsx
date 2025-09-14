@@ -22,8 +22,9 @@ const CHARITY = {
     "Al het geld wat ik deze week verdien, gaat naar het Armoede fonds van Doneer Effectief.",
 };
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const TARGET_DATE_DEFAULT = new Date(Date.now() + 1000 * 60 * 60 * 100); // ~100 uur vanaf nu
-const VIDEO_BG_SRC = "/UUU.mp4";
+const VIDEO_BG_SRC = `${prefix}/UUU.mp4`;
 const VIDEO_BG_POSTER = ""; // bijv. "/intro-poster.jpg" of laat leeg
 
 type CSSVars = React.CSSProperties & {
@@ -179,7 +180,7 @@ export default function EpicMemeCharityLanding() {
           {/* Foto */}
           <div className="flex justify-center">
             <WavyImage
-              src="/mijn-foto.jpg"
+              src={`${prefix}/mijn-foto.jpg`}
               alt="Portret van mij"
               className="w-60 h-60 rounded-2xl border-4 border-neutral-200 shadow-md"
               hoverScale={1}
@@ -220,7 +221,7 @@ export default function EpicMemeCharityLanding() {
             </a>
           </div>
           <Image
-            src="/doneereffectief.jpg"
+            src={`${prefix}/doneereffectief.jpg`}
             className="rounded-2xl mt-5 justify-self-center"
             width={200}
             height={300}
