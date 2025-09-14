@@ -22,7 +22,7 @@ const CHARITY = {
     "Al het geld wat ik deze week verdien, gaat naar het Armoede fonds van Doneer Effectief.",
 };
 
-const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "/100-urige-werkweek";
 const TARGET_DATE_DEFAULT = new Date(Date.now() + 1000 * 60 * 60 * 100); // ~100 uur vanaf nu
 const VIDEO_BG_SRC = `${prefix}/UUU.mp4`;
 const VIDEO_BG_POSTER = ""; // bijv. "/intro-poster.jpg" of laat leeg
