@@ -11,6 +11,6 @@ const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
   output: "export",          // enable static export
   images: { unoptimized: true }, // disable next/image optimization
-  basePath: isProd ? "/<your-repo-name>" : "",
-  assetPrefix: isProd ? "/<your-repo-name>/" : "",
+  basePath: isProd ? "/100-urige-werkweek" : "",
+  assetPrefix: isProd ? "/100-urige-werkweek/" : "",
 }
