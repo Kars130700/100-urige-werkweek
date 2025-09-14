@@ -111,7 +111,7 @@ export default function EpicMemeCharityLanding() {
     rel="noopener noreferrer"
     style={{ textDecoration: "underline", color: "var(--accent-cyan)" }}
   >
-    De bermudadriehoek van talent
+    &#39;De bermudadriehoek van talent&#39;
   </a>{" "}van Simon Teuten.
             Dit boek gaat over toppresteerders die &apos;vallen&apos; voor
             de grote kantoren en zo uiteindelijk niet aan hun eigen
