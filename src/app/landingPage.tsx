@@ -111,7 +111,7 @@ export default function EpicMemeCharityLanding() {
     rel="noopener noreferrer"
     style={{ textDecoration: "underline", color: "var(--accent-cyan)" }}
   >
-    "De bermudadriehoek van talent"
+    De bermudadriehoek van talent
   </a>{" "}van Simon Teuten.
             Dit boek gaat over toppresteerders die &apos;vallen&apos; voor
             de grote kantoren en zo uiteindelijk niet aan hun eigen
@@ -223,7 +223,7 @@ export default function EpicMemeCharityLanding() {
               Doneer Effectief probeert, zoals de naam al zegt, zo effectief
               mogelijk goed te doen. De grote filosoof B. Smalls sprak ooit:
               &#39;Mo&#39; Money, Mo&#39; Problems&#39;. Helaas is het onzin, als je in
-              armoede opgroeid. De doelen waaraan Doneer Effectief doneert,
+              armoede opgroeit. De doelen waaraan Doneer Effectief doneert,
               hebben sterk wetenschappelijk onderbouwd dat zij voor{" "}
               <AccentCoral>€5.000</AccentCoral> een mensenleven kunnen redden.
               Voor 1.666 pilsjes (of 833 als je in Amsterdam woont) kun je dus
