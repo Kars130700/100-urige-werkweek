@@ -23,7 +23,7 @@ const CHARITY = {
 };
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "/100-urige-werkweek";
-const TARGET_DATE_DEFAULT = new Date("2025-01-19T00:00:00+01:00");
+const TARGET_DATE_DEFAULT = new Date("2026-01-19T00:00:00+01:00");
 const VIDEO_BG_SRC = `${prefix}/UUU.mp4`;
 const VIDEO_BG_POSTER = ""; // bijv. "/intro-poster.jpg" of laat leeg
 
@@ -35,9 +35,7 @@ type CSSVars = React.CSSProperties & {
 
 export default function EpicMemeCharityLanding() {
   const [targetDate] = useState<Date>(TARGET_DATE_DEFAULT);
-
   const timeLeft = useCountdown(targetDate);
-
   const BANDS = useMemo(
     () => [
       {
@@ -115,7 +113,7 @@ export default function EpicMemeCharityLanding() {
   </a>{" "}van Simon Teuten.
             Dit boek gaat over toppresteerders die &apos;vallen&apos; voor
             de grote kantoren en zo uiteindelijk niet aan hun eigen
-            verwachtingen voldoen. In veel delen van het boek kon ik me
+            (impact) verwachtingen voldoen. In veel delen van het boek kon ik me
             vinden: ik zie mezelf als ambitieus, heb onwijs veel geluk met
             mijn jeugd gehad en wil graag bijdragen. Ook ben ik niet vies van
             een beetje beunen.
@@ -365,7 +363,7 @@ export default function EpicMemeCharityLanding() {
         </button>
       </div>
 
-      {/* Audio toggle */} <div className="fixed top-4 right-4 z-50 flex items-center gap-2"> <Image src="/100.svg" alt="Sound Icon" width={24} height={24} /> <label className="text-xs uppercase tracking-widest text-neutral-500 text-bold"><AccentCoral>UUR</AccentCoral></label> </div>
+      {/* Audio toggle */} <div className="fixed top-4 right-4 z-50 flex items-center gap-2"> <Image src="100-urige-werkweek/100.svg" alt="Sound Icon" width={24} height={24} /> <label className="text-xs uppercase tracking-widest text-neutral-500 text-bold"><AccentCoral>UUR</AccentCoral></label> </div>
     </div>
   );
 }
@@ -579,6 +577,7 @@ function useCountdown(targetDate: Date): Countdown {
     const id = setInterval(() => setNow(Date.now()), 250);
     return () => clearInterval(id);
   }, []);
+  
 
   const diff = Math.max(0, targetDate.getTime() - now);
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
