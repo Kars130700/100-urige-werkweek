@@ -363,7 +363,7 @@ export default function EpicMemeCharityLanding() {
         </button>
       </div>
 
-      {/* Audio toggle */} <div className="fixed top-4 right-4 z-50 flex items-center gap-2"> <Image src="100-urige-werkweek/100.svg" alt="Sound Icon" width={24} height={24} /> <label className="text-xs uppercase tracking-widest text-neutral-500 text-bold"><AccentCoral>UUR</AccentCoral></label> </div>
+      {/* Audio toggle */} <div className="fixed top-4 right-4 z-50 flex items-center gap-2"> <Image src={`${prefix}/100.svg`} alt="Icon" width={24} height={24} /> <label className="text-xs uppercase tracking-widest text-neutral-500 text-bold"><AccentCoral>UUR</AccentCoral></label> </div>
     </div>
   );
 }
