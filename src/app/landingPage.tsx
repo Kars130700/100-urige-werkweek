@@ -312,7 +312,7 @@ export default function EpicMemeCharityLanding() {
             q="Ik wil je misschien wel inhuren, maar wat kan jij allemaal?"
             a={
               <>
-                Goeie vraag. Dit is onderzoek in progress. Wat in eerder is
+                Goeie vraag. Dit is onderzoek in progress. Wat eerder is
                 gelukt: programmeren (master AI, ervaring met NextJS, python,
                 C#), zeilen, schoonmaken, teksten schrijven, koken, coachen,
                 bijles, lesgeven, evenementorganisatie, marketing,
